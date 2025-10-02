@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification-List</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header class="title">
+    <div class="title-icon">
+      ❎
+    </div>
+  </header>
+
+  <div class="notification-list">
+    <div class="list-title">
+      <h2>Notification</h2>
+    </div>
+
+    <table class="notification-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>제목</th>
+          <th>작성자</th>
+          <th>작성일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="list-item">
+          <td class="list-id">1</td>
+          <td class="list-name"><a href="">첫 번째 공지사항</a></td>
+          <td class="list-author">ADMIN</td>
+          <td><time class="list-createdAt" datetime="2025-10-02">2025-10-02</time>
+          </td>
+        </tr>
+        <tr class="list-item">
+          <td class="list-id">2</td>          
+          <td class="list-name"><a href="">두 번째 공지사항</a></td>    
+          <td class="list-author">ADMIN</td>
+          <td><time class="list-createdAt" datetime="2025-10-02">2025-10-02</time>
+          </td>          
+        </tr>
+        <tr class="list-item">
+          <td class="list-id">3</td>          
+          <td class="list-name"><a href="">세 번째 공지사항</a></td>          
+          <td class="list-author">ADMIN</td>
+          <td><time class="list-createdAt" datetime="2025-10-02">2025-10-02</time>
+          </td>
+        </tr>
+        <tr class="list-item">
+          <td class="list-id">4</td>          
+          <td class="list-name"><a href="">네 번째 공지사항</a></td>  
+          <td class="list-author">ADMIN</td>                  
+          <td><time class="list-createdAt" datetime="2025-10-02">2025-10-02</time>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form class="bottom">
+      <button type="button" class="create">공지사항 작성</button>
+
+      <div class="search">
+        <select>
+          <option value="" selected disabled>검색조건</option>
+          <option value="1">ID</option>
+          <option value="2">작성자</option>
+          <option value="3">제목</option>
+        </select>
+        <input placeholder="검색할 내용을 입력하세요" type="text" />
+        <button type="submit" class="search-btn">검색</button>
+      </div>
+    </form>
+
+  </div>
+
+</body>
+</html>
