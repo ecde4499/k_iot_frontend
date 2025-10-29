@@ -7,7 +7,7 @@ import B_React_Counter from './B_React_Counter'
 
 const h2Style = {
   backgroundColor: 'black',
-  color: 'white'
+  color: 'orange'
 }
 // React는 반드시 컴포넌트명이 대문자
 function Index() {
