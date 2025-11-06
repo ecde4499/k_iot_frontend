@@ -1,0 +1,55 @@
+.detail-container {
+  padding: 30px;
+  max-width: 500px;
+  margin: 40px auto;
+  border:  1px solid #add;
+  border-radius: 12px;
+  background-color: aquamarine;
+}
+
+h2 {
+  text-align: center;
+}
+
+.path-text {
+  text-align: center;
+  color: #666;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #525252;
+}
+
+.button-group button {
+  background-color:cornflowerblue;
+  border: 1px solid #2600ff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 15px;
+  border-bottom: 1px solid #525252;
+}
+
+.sub-nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.nested-outlet {
+  margin-top: 25px;
+  padding: 15px 20px;
+  border-left: 3px solid #525252;
+  background-color: #bbe6ff;
+  border-radius: 6px
+}

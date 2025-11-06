@@ -5,13 +5,28 @@ import State03 from './a_useState/State03'
 import State04 from './a_useState/State04'
 import State05 from './a_useState/State05'
 import State06 from './a_useState/State06'
-import State06_Child from './a_useState/State06_Child'
 import Ref01 from './b_useRef/Ref01'
+import Ref02 from './b_useRef/Ref02'
+import Ref_Practice01 from './b_useRef/Practice01'
+import Ref_Practice02 from './b_useRef/Practice02'
+import Effect01 from './c_useEffect/Effect01'
+import Effect02 from './c_useEffect/Effect02'
+import Effect_Practice01 from './c_useEffect/Practice01'
+import ToggleSection from '@/components/ToggleSection'
+import A_UseCallback from './d_callback_memo/A_UseCallback'
+import B_UseMemo from './d_callback_memo/B_UseMemo'
+import Reducer01 from './e_useReducer/Reducer01'
+import Reducer02 from './e_useReducer/Reducer02'
+import Custom01 from './f_custom/Custom01'
+import Custom02 from './f_custom/Custom02'
+import Custom03 from './f_custom/Custom03'
+import TodoAppLocalStorage from '@/_practices/c_hooks/TodoAppLocalStorage'
+import WebCam from './WebCam'
 
-const h2Style = {
-  backgroundColor: 'black',
-  color: 'orange'
-}
+// const h2Style = {
+//   backgroundColor: 'black',
+//   color: 'orange'
+// }
 
 function Index() {
   return (
@@ -23,16 +38,52 @@ function Index() {
         === 리엑트 Hooks ===
       </h1>
 
-      <h2 style={h2Style}>2. 리액트 Hooks - useRef</h2>
-      <Ref01 />
+      <ToggleSection title='7. 리액트 Hooks - WebCam'>
+        {/* <WebCam /> */}
+        <p>WebCam</p>
+      </ToggleSection>
+
+      <ToggleSection title='7. 리액트 Hooks - Todo(LocalStorage)'>
+        <TodoAppLocalStorage />
+      </ToggleSection>
+
+      <ToggleSection title='6. 리액트 Hooks - custom Hooks'>
+        <Custom01 />
+        <Custom02 />
+        <Custom03 />
+      </ToggleSection>
+
+      <ToggleSection title='5. 리액트 Hooks - useReducer'>
+        <Reducer01 />
+        <Reducer02 />
+      </ToggleSection>
+
+      <ToggleSection title='4. 리액트 Hooks - useCallback & useMemo'>
+        <A_UseCallback />
+        <B_UseMemo />
+      </ToggleSection>
+
+      <ToggleSection title='3. 리액트 Hooks - useEffect'>
+        <Effect01 />
+        <Effect02 />
+        <Effect_Practice01 />
+      </ToggleSection>
+
+      <ToggleSection title='2. 리액트 Hooks - useRef'>
+        <Ref01 />
+        <Ref02 />
+        <Ref_Practice01 />
+        <Ref_Practice02 />
+      </ToggleSection>
       
-      <h2 style={h2Style}>1. 리엑트 Hooks - useState</h2>
-      <State01 /> <hr />
-      <State02 /> <hr />
-      <State03 /> <hr />
-      <State04 /> <hr />
-      <State05 /> <hr />
-      <State06 /> <hr />
+      <ToggleSection title='1. 리엑트 Hooks - useState'>
+        <State01 /> <hr />
+        <State02 /> <hr />
+        <State03 /> <hr />
+        <State04 /> <hr />
+        <State05 /> <hr />
+        <State06 /> <hr />
+      </ToggleSection>
 
     </div>
   )
